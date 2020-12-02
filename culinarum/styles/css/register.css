@@ -1,0 +1,360 @@
+.register-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(52, 54, 66, 0.9);
+	z-index: 3;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s, visibility 0s;
+}
+
+.register-modal.is-visible {
+	visibility: visible;
+	opacity: 1;
+}
+
+.register-modal-container {
+	position: relative;
+	width: 90%;
+	max-width: 400px;
+	background: #FFF;
+	margin: 3em auto 4em;
+	cursor: auto;
+	border-radius: 10px;
+	transform: translateY(-30px);
+	transition-duration: 0.3s;
+}
+
+.register-modal.is-visible .register-modal-container {
+	transform: translateY(0);
+}
+
+.register-modal-container .register-switcher:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.register-modal-container .register-switcher li {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.register-modal-container .register-switcher li:first-child a {
+	border-radius: 10px 0 0 0;
+}
+
+.register-modal-container .register-switcher li:last-child a {
+	border-radius: 0 10px 0 0;
+}
+
+.register-modal-container .register-switcher a {
+	display: block;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #ddf1fe;
+	color: #809191;
+	transition: 0.3s;
+}
+
+.register-modal-container .register-switcher a.selected {
+	background: #FFF;
+	color: #505260;
+}
+
+@media only screen and (min-width: 600px) {
+	.register-modal-container {
+		margin: 4em auto;
+	}
+	.register-modal-container .register-switcher a {
+		height: 70px;
+		line-height: 70px;
+	}
+}
+
+.register-terms{
+	color: #2489cf;
+}
+
+.register-form {
+	padding: 1.4em;
+}
+
+.register-form .fieldset {
+	position: relative;
+	margin: 1.4em 0;
+}
+
+.register-form .fieldset:first-child {
+	margin-top: 0;
+}
+
+.register-form .fieldset:last-child {
+	margin-bottom: 0;
+}
+
+.register-form label {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+.register-form label.register-image {
+	display: inline-block;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+	height: 20px;
+	width: 20px;
+	overflow: hidden;
+}
+
+.register-form label.register-username {
+	background-image: url("svg/icon-username.svg");
+}
+
+.register-form label.register-email {
+	background-image: url("svg/icon-email.svg");
+}
+
+.register-form label.register-password {
+	background-image: url("svg/icon-password.svg");
+}
+
+.register-form input {
+	margin: 0;
+	padding: 0;
+	border-radius: 0.25em;
+}
+
+.register-form .register-input {
+	width: 100%;
+	padding: 12px 20px 12px 50px;
+	border: 1px solid #d2d8d8;
+	border-radius: 10px;
+}
+
+.register-form .register-input:focus {
+	border-color: #343642;
+	box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
+	outline: none;
+}
+
+.register-form input.has-error {
+	border: 1px solid #d76666;
+}
+
+.register-form button[type=submit] {
+	padding: 16px 0;
+	cursor: pointer;
+	background: #31abf6;
+	color: #FFF;
+	font-weight: bold;
+	border: none;
+	transition: 0.3s;
+}
+
+.register-form button[type=submit]:hover,
+.register-form button[type=submit]:focus {
+	background: #0a95eb;
+}
+
+.register-form .hide-password {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 6px 15px;
+	border-left: 1px solid #d2d8d8;
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+	font-size: 14px;
+	font-size: 0.875rem;
+	color: #343642;
+}
+
+.register-form .register-error-message {
+	display: inline-block;
+	position: absolute;
+	left: -5px;
+	bottom: -35px;
+	background: rgba(215, 102, 102, 0.9);
+	padding: .8em;
+	z-index: 2;
+	color: #FFF;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	border-radius: 10px;
+	pointer-events: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.2s 0, visibility 0 0.2s;
+}
+
+.register-form .register-error-message::after {
+	content: '';
+	position: absolute;
+	left: 22px;
+	bottom: 100%;
+	height: 0;
+	width: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgba(215, 102, 102, 0.9);
+}
+
+.register-form .register-error-message.is-visible {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.2s 0, visibility 0 0;
+	-moz-transition: opacity 0.2s 0, visibility 0 0;
+	transition: opacity 0.2s 0, visibility 0 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.register-form {
+		padding: 2em;
+	}
+	.register-form .fieldset {
+		margin: 2em 0;
+	}
+	.register-form .fieldset:first-child {
+		margin-top: 0;
+	}
+	.register-form .fieldset:last-child {
+		margin-bottom: 0;
+	}
+	.register-form input.has-padding {
+		padding: 16px 20px 16px 50px;
+	}
+	.register-form input[type=submit] {
+		padding: 16px 0;
+	}
+}
+
+.register-form-message {
+	padding: 1.4em 1.4em 0;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 1.4;
+	text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+	.register-form-message {
+		padding: 2em 2em 0;
+	}
+}
+
+.register-forgot-message {
+	width: 100%;
+	left: 0;
+	bottom: -30px;
+	text-align: center;
+	font-size: 14px;
+	font-size: 0.875rem;
+	transition: 0.3s;
+	padding: 0 0 20px 0;
+}
+
+.register-forgot-message a:hover {
+	color: #2489cf;
+}
+
+.register-close {
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: 0;
+	top: -40px;
+	background: url("svg/icon-close.svg") no-repeat center center;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+	.register-close {
+		display: none;
+	}
+}
+
+#signin-window,
+#signup-window,
+#register-reset-password {
+	display: none;
+}
+
+#signin-window.is-selected,
+#signup-window.is-selected,
+#register-reset-password.is-selected {
+	display: block;
+}
+
+.fieldset input[type="checkbox"] {
+	opacity: 0;
+}
+
+.fieldset label::before,
+.fieldset label::after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+}
+
+.fieldset::before {
+	height: 16px;
+	width: 16px;
+	border: 1px solid;
+	left: 0px;
+	border-radius: 6px;
+}
+
+.fieldset .label-remember-me,
+.fieldset .label-agree {
+	position: relative;
+	display: inline-block;
+	padding-left: 22px;
+}
+
+.fieldset .label-remember-me:before,
+.fieldset .label-agree:before {
+	height: 16px;
+	width: 16px;
+	border: 1px solid;
+	left: 0px;
+	bottom: -1px;
+	border-radius: 6px;
+	transition: 0.2s;
+}
+
+.fieldset .label-remember-me:after,
+.fieldset .label-agree:after {
+	height: 5px;
+	width: 9px;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(-45deg);
+	left: 4px;
+	top: 3.5px;
+	transition: 0.2s;
+	color: #fff;
+}
+
+.fieldset input[type="checkbox"]:checked+.label-remember-me:after,
+.fieldset input[type="checkbox"]:checked+.label-agree:after {
+	color: #fff;
+}
+
+.fieldset input[type="checkbox"]:checked+.label-remember-me::before,
+.fieldset input[type="checkbox"]:checked+.label-agree:before {
+	background-color: #2489cf;
+	border-color: #1d6ea6;
+}

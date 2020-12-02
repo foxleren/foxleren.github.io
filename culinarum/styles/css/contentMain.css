@@ -1,0 +1,388 @@
+.content-box {
+	margin: 100px auto;
+	width: 100%;
+	min-height: calc(100vh - 80px);
+}
+
+.main-page {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.filtr-box {
+	order: 1;
+	width: 30%;
+	margin-right: 10px;
+}
+
+.hide {
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.accordion {
+	background: #fff;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 400px;
+	box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+	border-radius: 10px;
+}
+
+.accordion-item {
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion-item:last-child {
+	border-bottom: none;
+}
+
+.accordion-label {
+	padding: 20px 0 20px 30px;
+	width: 100%;
+	display: block;
+	font-size: 18px;
+}
+
+.accordion-label:hover {
+	cursor: pointer;
+}
+
+.accordion-label:before {
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 5px;
+	top: 22px;
+	left: 12px;
+	display: inline-block;
+	border-left: 5px solid #999;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}
+
+input[type=checkbox]:checked~.accordion-label:before {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.accordion-child {
+	margin: 0;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity: 0;
+	height: 0;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+	-webkit-transform-origin: center top;
+	transform-origin: center top;
+}
+
+input[type=checkbox]:checked~.accordion-child {
+	border-top: 1px solid #e0e0e0;
+	background: #fff;
+	padding: 1.5em 0.8em;
+	height: auto;
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+input[type=checkbox]:checked~.accordion-child:last-child {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.checkbox:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+	opacity: 0;
+	display: none;
+}
+
+.checkbox label {
+	position: relative;
+	display: inline-block;
+	padding-left: 22px;
+	width: 100%;
+}
+
+.checkbox label::before,
+.checkbox label::after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+}
+
+.checkbox label::before {
+	height: 16px;
+	width: 16px;
+	border: 1px solid;
+	left: 0px;
+	border-radius: 6px;
+}
+
+.checkbox label::after {
+	height: 5px;
+	width: 9px;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	transform: rotate(-45deg);
+	left: 4px;
+	top: 4px;
+}
+
+.checkbox input[type="checkbox"]+label::after {
+	content: none;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+	content: "";
+}
+
+.checkbox input[type="checkbox"]:checked+label::before {
+	background-color: #2489cf;
+	border-color: #1d6ea6;
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+	color: #fff;
+}
+
+.filtr-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 0 5px;
+}
+
+.sticker-container-filtr {
+	padding: 1.5em 0.5em;
+	width: 50%;
+	text-align: center;
+}
+
+.sticker-filtr-content,
+.sticker-drop-content {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+
+.sticker-filtr-content:before {
+	display: block;
+	color: rgba(0, 0, 0, .075);
+	padding: 7px;
+	position: relative;
+	margin: 0 auto;
+	font-size: 1.5em;
+	content: "\f0b0";
+	font-family: FontAwesome;
+}
+
+.sticker-drop-content:before {
+	display: block;
+	color: rgba(0, 0, 0, .075);
+	padding: 7px;
+	position: relative;
+	margin: 0 auto;
+	font-size: 1.5em;
+	content: "\f014";
+	font-family: FontAwesome;
+}
+
+.sticker-drop,
+.sticker-filtr {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.sticker-drop-content,
+.sticker-filtr-content {
+	height: 50px;
+	width: 50px;
+	color: black;
+	transition: 0.3s linear;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 32px;
+	background: rgba(0, 0, 0, .01);
+	border: 3px solid rgba(0, 0, 0, .075);
+	border-radius: 25px;
+}
+
+.sticker-filtr:hover .sticker-filtr-content:before,
+.sticker-drop:hover .sticker-drop-content:before {
+	color: #2489cf;
+}
+
+.sticker-filtr:hover .sticker-filtr-content,
+.sticker-drop:hover .sticker-drop-content {
+	border-color: #2489cf;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 10px;
+	order: 2;
+	width: 65%;
+}
+
+.recipe-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 30px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+}
+
+.recipe-first-part {
+	order: 1;
+	width: 50%;
+	padding: 2em 1em 0.5em 1em;
+	border-right: 1px solid rgba(0, 0, 0, .075);
+}
+
+.dish-name {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.dish-photo {
+	margin-bottom: 5px;
+}
+
+.dish-photo img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.recipe-tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tag-content {
+	padding: 0px 5px;
+}
+
+.tag {
+	height: 32px;
+	width: auto;
+	padding: 0 20px 0 20px;
+	color: black;
+	transition: 0.3s linear;
+	font-size: 1.1em;
+	font-weight: 500;
+	line-height: 32px;
+	background: #c4e7fd;
+	border-radius: 10px;
+}
+
+.recipe-second-part {
+	order: 2;
+	width: 50%;
+}
+
+.recipe-description {
+	width: 100%;
+	padding: 2em 1.5em;
+	text-align: center;
+}
+
+.description-name {
+	margin-bottom: 20px;
+}
+
+.description-text {
+	text-align: start;
+	line-height: 1.3em;
+}
+
+.recipe-characterisctics {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, .075);
+	border-bottom: 1px solid rgba(0, 0, 0, .075);
+}
+
+.recipe-time,
+.recipe-calories {
+	display: block;
+	position: relative;
+}
+
+.recipe-time:before {
+	display: block;
+	color: gold;
+	position: relative;
+	margin: 0 auto;
+	font-size: 1.5em;
+	content: "\f017";
+	font-family: FontAwesome;
+}
+
+.recipe-calories:before {
+	display: block;
+	color: gold;
+	position: relative;
+	margin: 0 auto;
+	font-size: 1.5em;
+	content: "\f0e7";
+	font-family: FontAwesome;
+}
+
+.recipe-time {
+	width: 50%;
+	border-right: 1px solid rgba(0, 0, 0, .075);
+}
+
+.recipe-time,
+.recipe-calories {
+	width: 50%;
+	padding: 1em 1em;
+}
+
+.calories-name {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.name-span {
+	padding-top: 10px;
+	width: 30%;
+	margin: 0 auto;
+	border-bottom: 1px solid rgb(183, 183, 183);
+}
+
+.recipe-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.sticker-container {
+	padding: 1.5em 1em;
+	width: 50%;
+	text-align: center;
+}

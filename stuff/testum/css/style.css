@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+  }
+  html { height: 101%; } /* always display scrollbars */
+  body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+  ol, ul { list-style: none; }
+  
+  blockquote, q { quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+  strong { font-weight: bold; } 
+  
+  input { outline: none; }
+  
+  table { border-collapse: collapse; border-spacing: 0; }
+  img { border: 0; max-width: 100%; }
+  
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+/*------------------------------------------------------------*/
+
+.header {
+    width: 100%;
+    background: lemonchiffon;
+}
+
+.header-main {
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: dimgrey;
+    text-transform: uppercase;
+}
+
+.content-box {
+    display: flex;
+    min-height: calc(100vh - 80px);
+    background: #f1f4f7;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center ;
+}
+
+
+
+.test-preview {
+    display: inline-flex;
+    width: 400px;
+    height: 70px;
+    margin-top: 30px;
+    text-align: center;
+    background: #ffff;
+    transition: 0.3s linear;
+    border-radius: 10px;
+}
+
+.test-preview:nth-child(2n+1) {  
+    margin-right: 10px;
+}
+
+
+.test-preview:hover {
+    box-shadow: 0 0 0 2px rgb(0, 0, 0, 0.05);
+}
+
+
+
+.test-preview-image {
+    height: 70px;
+    width: 65px;
+    background: url(icons/icon-1.svg);
+}
+
+.test-preview-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: dimgrey;
+    padding: 15px 10px 15px 10px;
+}

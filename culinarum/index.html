@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="styles\css\basic.css">
+      <link rel="stylesheet" href="styles\css\header.css">
+      <link rel="stylesheet" href="styles\css\search.css">
+      <link rel="stylesheet" href="styles\css\register.css">
+      <link rel="stylesheet" href="styles\css\contentMain.css">
+      <link rel="stylesheet" href="styles\css\stickers.css">
+      <link rel="stylesheet" href="styles\css\barier.css">
+      <link rel="stylesheet" href="styles\css\message.css">
+      <link rel="stylesheet" href="styles\css\footer.css">
+      <link rel="stylesheet" href="styles\css\adoptationMain.css">
+      <link rel="icon" href="styles\svg\favicon.svg" type="image/png ">
+      <title>Culinarum</title>
+   </head>
+   <body>
+      <header>
+         <div class="header-container">
+            <nav id="navigation">
+               <a href="index.html" class="logotype">Culinarum</a>
+               <form class="search-form" action="">
+                  <input class="search-input" type="search"></input>
+                  <button class="search-button" type="submit">
+                  <i class="fa fa-search"></i>
+                  </button>
+               </form>
+               <a aria-label="mobile menu" class="nav-toggle">
+               <span></span>
+               <span></span>
+               <span></span>
+               </a>
+               <ul class="menu-left">
+                  <li>
+                     <a class="sign-in" href="#">Sign-in</a>
+                  </li>
+                  <li>
+                     <a class="sign-up" href="#">Sign-up</a>
+                  </li>
+                  <!--
+                     <li>
+                      <a href="index_my.html">Saved</a>
+                     </li>
+                     --> 
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <div class="register-modal">
+         <div class="register-modal-container">
+            <ul class="register-switcher">
+               <li><a href="#">Sign in</a></li>
+               <li><a href="#">New account</a></li>
+            </ul>
+            <div id="signin-window">
+               <form class="register-form">
+                  <p class="fieldset">
+                     <label class="register-image register-email" for="signin-email"></label>
+                     <input class="register-input " id="signin-email" type="email" placeholder="E-mail">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <label class="register-image register-password" for="signin-password"></label>
+                     <input class="register-input" id="signin-password" type="text"  placeholder="Password">
+                     <a href="#0" class="hide-password">Hide</a>
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <input type="checkbox" id="remember-me" checked>
+                     <label class="label-remember-me"for="remember-me">Remember me</label>
+                  </p>
+                  <p class="fieldset">
+                     <button class="register-input" type="submit">Login</button>
+                  </p>
+                  <p class="register-forgot-message">
+                     <a href="#0">Forgot your password?</a>
+                  </p>
+               </form>
+            </div>
+            <div id="signup-window">
+               <form class="register-form">
+                  <p class="fieldset">
+                     <label class="register-image register-username" for="signup-username"></label>
+                     <input class="register-input " id="signup-username" type="text" placeholder="Username">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <label class="register-image register-email" for="signup-email"></label>
+                     <input class="register-input " id="signup-email" type="email" placeholder="E-mail">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <label class="register-image register-password" for="signup-password"></label>
+                     <input class="register-input " id="signup-password" type="text"  placeholder="Password">
+                     <a href="#0" class="hide-password">Hide</a>
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <input type="checkbox" id="accept-terms">
+                     <label class="label-agree"for="accept-terms">I agree to the <a class="register-terms" href="#">Terms</a></label>
+                  </p>
+                  <p class="fieldset">
+                     <button class="register-input" type="submit">Create new account</button>
+                  </p>
+               </form>
+            </div>
+            <div id="register-reset-password">
+               <p class="register-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+               <form class="register-form">
+                  <p class="fieldset">
+                     <label class="register-image register-email" for="reset-email"></label>
+                     <input class="register-input " id="reset-email" type="email" placeholder="E-mail">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <button class="register-input" type="submit">Reset password</button>
+                  </p>
+               </form>
+               <p class="register-forgot-message"><a href="#0">Back to log-in</a></p>
+            </div>
+            <a href="#" class="register-close">Close</a>
+         </div>
+      </div>
+      <div class="content-box">
+         <div class="main-page">
+            <div class="filtr-box">
+               <ul class="accordion">
+                  <li class="accordion-item">
+                     <input id="s1" class="hide" type="checkbox"></input>
+                     <label for="s1" class="accordion-label">Вид блюда</label>
+                     <ul class="accordion-child">
+                        <li>
+                           <div class="checkbox">
+                              <input type="checkbox" id="checkbox_1"></input>
+                              <label for="checkbox_1">Lorem ipsum</label>
+                           </div>
+                           <div class="checkbox">
+                              <input type="checkbox" id="checkbox_2"></input>
+                              <label for="checkbox_2">Lorem ipsum</label>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="accordion-item">
+                     <input id="s2" class="hide" type="checkbox"></input>
+                     <label for="s2" class="accordion-label">Время приготовления</label>
+                     <ul class="accordion-child">
+                        <li>
+                           <div class="checkbox">
+                              <input type="checkbox" id="checkbox_3"></input>
+                              <label for="checkbox_3">Lorem ipsum</label>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="accordion-item">
+                     <input id="s3" class="hide" type="checkbox"></input>
+                     <label for="s3" class="accordion-label">Calories</label>
+                     <ul class="accordion-child">
+                        <li>
+                           <div class="checkbox">
+                              <input type="checkbox" id="checkbox_4"></input>
+                              <label for="checkbox_4">Lorem ipsum</label>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <div class="filtr-buttons">
+                  <div class="sticker-container-filtr">
+                     <div class="sticker-filtr">
+                        <a class="sticker-filtr-content" href="#"></a>
+                     </div>
+                  </div>
+                  <div class="sticker-container-filtr">
+                     <div class="sticker-drop">
+                        <a class="sticker-drop-content" href="#"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="list">
+               <div class="recipe-box">
+                  <div class="recipe-first-part">
+                     <div class="dish-name">
+                        <div class="dish-name-content">Food</div>
+                        <div class="name-span"></div>
+                     </div>
+                     <div class="dish-photo">
+                        <img src="styles\images\pizza.jpg">
+                     </div>
+                     <div class="recipe-tags">
+                        <div class="tag-content">
+                           <a class="tag" href="#">Russian</a>
+                        </div>
+                        <div class="tag-content">
+                           <a class="tag" href="#">German</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="recipe-second-part">
+                     <div class="recipe-description">
+                        <div class="description-name">
+                           <div class="description-name-content">Description</div>
+                           <div class="name-span"></div>
+                        </div>
+                        <div class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                           sit amet ut labore et dolore. 
+                        </div>
+                     </div>
+                     <div class="recipe-characterisctics">
+                        <div class="recipe-time">
+                           <div class="calories-name"></div>
+                           <div class="time-text">10 min</div>
+                        </div>
+                        <div class="recipe-calories">
+                           <div class="calories-name"></div>
+                           <div class="calories-text">300 cal</div>
+                        </div>
+                     </div>
+                     <div class="recipe-buttons">
+                        <div class="sticker-container">
+                           <div class="sticker-plus">
+                              <a class="sticker-plus-content" href="#"></a>
+                           </div>
+                        </div>
+                        <div class="sticker-container">
+                           <div class="sticker-more">
+                              <a class="sticker-more-content" href="indexRecipe.html"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="message">
+                  <div class="message-image"></div>
+                  <div class="message-title">Сожалеем, но...</div>
+                  <div class="message-text">Запрос не дал результатов</div>
+                  <a class="go-back" href="#">Вернуться</a>
+               </div>
+               <div class="button-show">
+                  <div class="sticker-container-show">
+                     <div class="sticker-show">
+                        <a class="sticker-begin-content" href="#"></a>
+                     </div>
+                  </div>
+                  <div class="sticker-container-show">
+                     <div class="sticker-show">
+                        <a class="sticker-back-content" href="#"></a>
+                     </div>
+                  </div>
+                  <div class="sticker-container-show">
+                     <div class="sticker-show">
+                        <a class="sticker-active-content" href="#">20</a>
+                     </div>
+                  </div>
+                  <div class="sticker-container-show">
+                     <div class="sticker-show">
+                        <a class="sticker-next-content" href="#"></a>
+                     </div>
+                  </div>
+                  <div class="sticker-container-show">
+                     <div class="sticker-show">
+                        <a class="sticker-end-content" href="#"></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="gradient-barier"></div>
+      <footer>
+         <div class="autograph">
+            <div class="made-by">made by
+            </div>
+            <div class="authors">
+               <div class="f-p">foxleren & paw1a</div>
+               <div class="frontend">Frontend</div>
+               <div class="backend">Backend</div>
+            </div>
+         </div>
+      </footer>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js\script.js"></script>
+      <script src="js\modal.js"></script>
+   </body>
+</html>

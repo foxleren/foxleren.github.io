@@ -1,0 +1,68 @@
+.message {
+	display: table;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.5s;
+    font-size: 12px;
+    box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+}
+
+.message {
+	width: fit-content;
+	padding: 1em 2em;
+}
+
+.sticker-title {
+	display: table;
+	width: 100%;
+	margin-bottom: 23px;
+	font-weight: 500;
+	color: #005ba6;
+	font-size: 1.9em;
+	line-height: 35px;
+}
+
+.message .message-title {
+	display: table;
+	margin-bottom: 15px;
+	font-weight: 500;
+	color: #005ba6;
+	font-size: 1.9em;
+	line-height: 35px;
+}
+
+.message-text {
+	display: table;
+	font-weight: 500;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+}
+
+
+.message-image {
+	display: table;
+    width: 200px;
+    height: 200px;
+	background: url(../svg/message.svg);
+}
+
+.go-back {
+    padding: 0 50px 0 20px;
+    color: #2489cf;
+    transition: 0.4s linear;
+    font-size: 1.4em;
+    margin-left: -19px;
+    font-weight: 500;
+    line-height: 32px;
+    float: left;
+    border-radius: 10px;
+}
+
+.message:hover .go-back {
+    background-color: #2489cf;
+    color: #fff;
+    cursor: pointer;
+	margin-left: 0;
+}

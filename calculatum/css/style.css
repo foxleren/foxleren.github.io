@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+  }
+  html { height: 101%; } /* always display scrollbars */
+  body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+  ol, ul { list-style: none; }
+  
+  blockquote, q { quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+  strong { font-weight: bold; } 
+  
+  input { outline: none; }
+  
+  table { border-collapse: collapse; border-spacing: 0; }
+  img { border: 0; max-width: 100%; }
+  
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+/*-----------------------------------*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #b8d3fe;
+    
+}
+
+.content-box {
+    min-height: calc(100vh - 80px);
+}
+
+.calculator-content {
+    overflow: hidden;
+    width: 320px;
+    margin: 15em auto;
+   
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.first-half .input {
+    letter-spacing: 0.05em;
+    height: 40px;
+    font-weight: 600;
+    font-size: 2.5em;
+    padding: 10px 8px;
+    line-height: 40px;
+    text-align: left;
+}
+.second-half {
+    text-align: center;
+    padding: 0 5px 5px 5px;
+}
+
+button {
+    width: 23.8%;
+    height: 56px;
+    margin-right: 0.1em;
+    margin-bottom: 0.2em;
+    border: none; 
+    outline: none;
+    border-radius: 10px;
+    font-size: 2em;
+    background: #f0f0f0;
+}
+
+button:hover {
+    background: rgb(0, 0, 0, 0.1);
+    transition: all 200ms ease-out;
+}
+button:nth-child(2), 
+button:nth-child(6), 
+button:nth-child(10),
+button:nth-child(14),
+button:nth-child(18)
+{
+    margin-right: 0;
+}
+button:nth-child(1), 
+button:nth-child(2) {
+    width: 48.7%;
+}
+
+button:nth-child(15), 
+button:nth-child(16),
+button:nth-child(17),
+button:nth-child(18) {
+    margin-bottom: 0;
+}

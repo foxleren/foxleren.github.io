@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <script src="js\script.js"></script>
+      <script src="js\main.js"></script>
+      <script src="js\calc.js"></script>
+      <meta name="viewport" content="width=device-width; initial-scale=1">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Baumans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css\style.css">
+      <link rel="icon" href="css\images\favicon.png" type="image/png ">
+      <title>Graphics.io</title>
+   </head>
+   <body>
+      <header>
+         <a class="logo" href="index.html">Graphics.io</a>
+      </header>
+      <div class="container">
+         <div id="form-in">
+            <form>
+               <input id="enter" type="text" placeholder="Введите функцию...">
+               <button type="button" onclick="AddAndPlot()"></button>
+            </form>
+            <div class="wwd-content">
+               <div class="wwd_tabs">
+                  <section class="ac-container">
+                     <input id="ac-1" name="accordion-1" type="radio" />
+                     <label class="accord1" for="ac-1">active</label>
+                     <article class="ac-cont1">
+                        <p class = "p1"><a  class="a-h1" ></a>1. Lorem ipsum </a><button class="b-re" type="button" onclick=""></button><a class="a-h4" >4. Lorem ipsum </a><button class="b-re" type="button" onclick=""></button></p>
+                        <p class = "p2"><a  class="a-h2" >2. Lorem ipsum </a><button class="b-re" type="button" onclick=""></button><a class="a-h5">5. Lorem ipsum </a><button class="b-re" type="button" onclick=""></button></p>
+                        <p class = "p3"><a  class="a-h3" >3. Lorem ipsum </a><button class="b-re" type="button" onclick=""></button><a class="a-h6">6. Lorem ipsum </a><button class="b-re" type="button" onclick=""></button></p>
+                     </article>
+                  </section>
+               </div>
+               <button class="b-minus" type="button" onclick="zoomMinus()"></button>
+               <button class="b-plus" type="button" onclick="cleanCanvas()"></button>
+               <button class="b-cl" type="button" onclick="cl()"></button>
+            </div>
+         </div>
+         <canvas id="canvas"></canvas>
+         <script> 
+            let indexScale;
+            let indexZoom = 1;
+            
+            
+            
+            
+            
+            
+            if (document.querySelector('#canvas').clientWidth < 480) {
+               indexScale = 2;
+               HEIGHT = document.querySelector('#canvas').clientWidth * indexScale; 
+               WIDTH = document.querySelector('#canvas').clientWidth * indexScale;
+            
+               CELL_SIZE_X = Math.round( 33 * 1270 / WIDTH)
+               CELL_SIZE_Y = Math.round( 60 * 700 / HEIGHT)
+            }
+            
+            if (document.querySelector('#canvas').clientWidth < 880 && document.querySelector('#canvas').clientWidth > 480) {
+              indexScale = 1;
+              
+              HEIGHT = document.querySelector('#canvas').clientHeight* indexScale;
+               WIDTH = document.querySelector('#canvas').clientWidth* indexScale;
+            
+               CELL_SIZE_X = Math.round(19* 1270 / WIDTH)
+               CELL_SIZE_Y = Math.round(20 * 700 / HEIGHT)
+            }
+            
+            
+            
+            if (document.querySelector('#canvas').clientWidth < 1100 && document.querySelector('#canvas').clientWidth > 880) {
+              indexScale = 1;
+              
+              HEIGHT = document.querySelector('#canvas').clientHeight* indexScale;
+               WIDTH = document.querySelector('#canvas').clientWidth* indexScale;
+            
+               CELL_SIZE_X = Math.round(35* 1270 / WIDTH)
+               CELL_SIZE_Y = Math.round(27 * 700 / HEIGHT)
+            } 
+            
+            if ((document.querySelector('#canvas').clientWidth > 1100)) {
+              indexScale = 1;
+              
+              HEIGHT = document.querySelector('#canvas').clientHeight * indexScale;
+              WIDTH = document.querySelector('#canvas').clientWidth *indexScale;
+              
+              CELL_SIZE_X = Math.round(35 * 1270 / WIDTH)
+              CELL_SIZE_Y = Math.round(24 * 700 / HEIGHT)
+            }
+            
+            const X0 = 0
+            const Y0 = 0
+            
+            const GRID_COLOR = "#ccc"
+            const AXIS_COLOR = "#000"
+            
+            SCALE = 1
+            
+            let canvas = document.getElementById("canvas")
+            
+            canvas.width = WIDTH
+            canvas.height = HEIGHT
+            
+            
+            let plotter = new Plotter(canvas, CELL_SIZE_X, CELL_SIZE_Y, X0, Y0, GRID_COLOR, AXIS_COLOR, SCALE, indexScale)
+            
+            document.addEventListener('mousewheel', function (e) { plotter.MouseWheel(e) })
+            document.addEventListener('mousemove', function (e) { plotter.MouseMove(e) })
+            document.addEventListener('mousedown', function (e) { plotter.MouseDown(e) })
+            document.addEventListener('mouseup', function (e) { plotter.MouseUp(e) })
+            
+            function AddAndPlot() {
+              var an = document.getElementById("enter")
+              var b = an.value
+              var lexemes = b.match(/\(|\)|\+|\-|\*|\/|\^|\d+\.\d*|\d+|sqrt|x|sin|cos|tan|cot|pi|e/gi)
+              var calc = new Calc(lexemes)
+            
+              plotter.AddSimpleFunction(calc)
+              plotter.Plot()
+            }
+            plotter.Plot()
+            
+         </script>
+      </div>
+      <footer>
+         <ul>
+            <li>
+               <a class="logo_footer" href="index.html">Graphics.io<i>&copy; 2020</i></a>
+            </li>
+            <li>
+               <ul>
+                  <li class="link1"><a href="https://vk.com/foxleren" target="_blank">foxleren</a></li>
+               </ul>
+            </li>
+            <li>
+               <ul>
+                  <li class="link2"><a href="https://vk.com/carbon6090" target="_blank">carbon</a></li>
+               </ul>
+            </li>
+         </ul>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js\main.js"></script>
+   </body>
+</html>
