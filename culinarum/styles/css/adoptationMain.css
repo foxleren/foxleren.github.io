@@ -94,6 +94,9 @@
 		width: 100%;
 		margin-left: 0;
 	}
+	.message {
+			max-height: none;
+	}
 }
 
 @media(max-width:480px) {

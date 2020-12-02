@@ -1,6 +1,10 @@
 .message {
-	display: table;
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
+	max-height: 165px;
+	width: fit-content;
+	padding: 1em 2em;
 	background: #fff;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -8,52 +12,43 @@
     box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
 
-.message {
-	width: fit-content;
-	padding: 1em 2em;
-}
-
-.sticker-title {
-	display: table;
-	width: 100%;
-	margin-bottom: 23px;
-	font-weight: 500;
-	color: #005ba6;
-	font-size: 1.9em;
-	line-height: 35px;
-}
-
 .message .message-title {
-	display: table;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-weight: 500;
-	color: #005ba6;
 	font-size: 1.9em;
 	line-height: 35px;
 }
 
 .message-text {
-	display: table;
 	font-weight: 500;
 	font-size: 1.3em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
 }
 
-
 .message-image {
+	width: 30%;
+}
+
+.message-content {
+	width: 70%;
+}
+
+
+.message-image-content {
 	display: table;
-    width: 200px;
-    height: 200px;
+    width: 60px;
+	height: 60px;
+	float: left;
 	background: url(../svg/message.svg);
 }
 
 .go-back {
-    padding: 0 50px 0 20px;
-    color: #2489cf;
-    transition: 0.4s linear;
+	padding: 0 50px 0 20px;
+	background: #81cbfb;
+	color: #fff;
+    transition: 0.3s linear;
     font-size: 1.4em;
-    margin-left: -19px;
     font-weight: 500;
     line-height: 32px;
     float: left;
@@ -61,8 +56,6 @@
 }
 
 .message:hover .go-back {
-    background-color: #2489cf;
-    color: #fff;
+	background:#37acf9;
     cursor: pointer;
-	margin-left: 0;
 }
