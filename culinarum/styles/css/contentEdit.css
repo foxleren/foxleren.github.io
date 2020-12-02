@@ -182,7 +182,7 @@
 }
 
 textarea {
-    overflow: hidden;
+  /*  overflow: hidden; */
     resize: none;
  padding: 5px;
  border: 1px solid #d2d8d8;
