@@ -187,6 +187,9 @@ textarea {
  padding: 5px;
  border: 1px solid #d2d8d8;
  border-radius: 5px;
+ font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    font-size: 11px
 }
 
 
