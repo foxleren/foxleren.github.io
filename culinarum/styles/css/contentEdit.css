@@ -193,7 +193,11 @@ textarea {
 }
 
 
-.dish-name textarea, .tag-content textarea {
+.dish-name textarea {
+    height: 70px;
+}
+
+.tag-content textarea {
     height: 45px;
 }
 
