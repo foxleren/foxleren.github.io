@@ -1,3 +1,5 @@
+/*--Filtr buttons--*/
+
 .filtr-buttons {
 	display: flex;
 	flex-wrap: wrap;
@@ -75,16 +77,7 @@
 }
 
 
-
-
-
-
-
-
-
-
 /*--Plus&More--*/
-
 
 .sticker-plus-content,
 .sticker-more-content {
@@ -148,24 +141,13 @@
 	border-color: #2489cf;
 }
 
-/*--*/
 
-.sticker-plus-content,
+/*-Download button-*/
+
 .sticker-download-content {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-}
-
-.sticker-plus-content:before {
-	display: block;
-	color: rgba(0, 0, 0, .075);
-	padding: 7px 10px;
-	position: relative;
-	margin: 0 auto;
-	font-size: 1.5em;
-	content: "\f097";
-	font-family: FontAwesome;
 }
 
 .sticker-download-content:before {
@@ -180,20 +162,17 @@
 	font-family: FontAwesome;
 }
 
-.sticker-plus:hover .sticker-plus-content:before,
 .sticker-download:hover .sticker-download-content:before {
 	color: #2489cf;
 }
 
-.sticker-download,
-.sticker-plus {
+.sticker-download {
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
 }
 
-.sticker-download-content,
-.sticker-plus-content {
+.sticker-download-content {
 	height: 50px;
 	width: 50px;
 	color: black;
@@ -206,28 +185,17 @@
 	border-radius: 25px;
 }
 
-.sticker-download:hover .sticker-download-content,
-.sticker-plus:hover .sticker-plus-content {
+.sticker-download:hover .sticker-download-content {
 	border-color: #2489cf;
 }
 
-/*--More&Delete*/
-.sticker-more-content,
+
+/*--Delete button--*/
+
 .sticker-delete-content {
 	display: block;
 	margin: 0 auto;
 	position: relative;
-}
-
-.sticker-more-content:before {
-	display: block;
-	color: rgba(0, 0, 0, .075);
-	padding: 6px;
-	position: relative;
-	margin: 0 auto;
-	font-size: 1.5em;
-	content: "\f02d";
-	font-family: FontAwesome;
 }
 
 .sticker-delete-content:before {
@@ -242,20 +210,17 @@
 	font-family: FontAwesome;
 }
 
-.sticker-more:hover .sticker-more-content:before,
 .sticker-delete:hover .sticker-delete-content:before {
 	color: #2489cf;
 }
 
-.sticker-delete,
 .sticker-more {
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
 }
 
-.sticker-delete-content,
-.sticker-more-content {
+.sticker-delete-content {
 	height: 50px;
 	width: 50px;
 	color: black;
@@ -268,23 +233,21 @@
 	border-radius: 25px;
 }
 
-.sticker-delete:hover .sticker-delete-content,
-.sticker-more:hover .sticker-more-content {
+.sticker-delete:hover .sticker-delete-content {
 	border-color: #2489cf;
-}.sticker-more:hover .sticker-more-content:before,
- .sticker-delete:hover .sticker-delete-content:before {
-	 color: #2489cf;
- }
+}
 
-.sticker-delete,
-.sticker-more {
+.sticker-delete:hover .sticker-delete-content:before {
+	color: #2489cf;
+}
+
+.sticker-delete {
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
 }
 
-.sticker-delete-content,
-.sticker-more-content {
+.sticker-delete-content {
 	height: 50px;
 	width: 50px;
 	color: black;
@@ -297,11 +260,13 @@
 	border-radius: 25px;
 }
 
-.sticker-delete:hover .sticker-delete-content,
-.sticker-more:hover .sticker-more-content {
+.sticker-delete:hover .sticker-delete-content {
 	border-color: #2489cf;
 }
+
+
 /*--Show--*/
+
 .button-show {
 	display: flex;
 	flex-wrap: wrap;
@@ -325,6 +290,7 @@
 	margin: 0 auto;
 	position: relative;
 }
+
 .sticker-begin-content:before,
 .sticker-back-content:before,
 .sticker-active-content:before,
@@ -343,30 +309,31 @@
 	content: "\f100";
 	font-family: FontAwesome;
 }
+
 .sticker-back-content:before {
 	content: "\f104";
 	font-family: FontAwesome;
 }
+
 .sticker-active-content {
 	display: block;
-    color: rgba(0, 0, 0, .075);
-    padding: 6px 5px;
-    position: relative;
-    margin: 0 auto;
-    font-weight: 600;
-    font-size: 1.2em;
+	color: rgba(0, 0, 0, .075);
+	padding: 6px 5px;
+	position: relative;
+	margin: 0 auto;
+	font-weight: 600;
+	font-size: 1.2em;
 }
+
 .sticker-next-content:before {
 	content: "\f105";
 	font-family: FontAwesome;
 }
-.sticker-end-content:before {
 
+.sticker-end-content:before {
 	content: "\f101";
 	font-family: FontAwesome;
 }
-
-
 
 .sticker-show:hover .sticker-begin-content:before,
 .sticker-show:hover .sticker-back-content:before,
@@ -382,7 +349,7 @@
 .sticker-next-content,
 .sticker-end-content {
 	min-width: 40px;
-    width: fit-content;
+	width: fit-content;
 	transition: 0.3s linear;
 	font-size: 1.4em;
 	font-weight: 500;
@@ -404,101 +371,99 @@
 .sticker-back-content:before {
 	left: -1px;
 }
+
 .sticker-next-content:before,
 .sticker-end-content:before {
 	left: 1px;
 }
 
 
+/*--Disabled link--*/
 
 a.disabled {
 	pointer-events: none;
 	cursor: default;
-	}
+}
 
 
-
-
-
-/**/
+/*--Upload button--*/
 
 .upload-file {
 	width: 100%;
 	position: relative;
 	margin: 15px 0;
 	text-align: center;
-  }
-  
-  .upload-file-input {
+}
+
+.upload-file-input {
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-  }
-  
-  .new-upload-file-input {
+}
+
+.new-upload-file-input {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	cursor: pointer;
-  }
-  
-  .upload-file-status {
-	  order: 2;
+}
+
+.upload-file-status {
+	order: 2;
 	width: 65%;
 	padding: 0 20px 0 20px;
-    font-size: 0.9em;
-    font-weight: 500;
-    line-height: 32px;
-    border-left: none;
-    border-top-right-radius: 10px;
+	font-size: 0.9em;
+	font-weight: 500;
+	line-height: 32px;
+	border-left: none;
+	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	border: 1px solid #81cbfb;
-  }
-  
-  .upload-file-button {
-	  order: 1;
+}
+
+.upload-file-button {
+	order: 1;
 	width: 35%;
 	padding: 0 20px 0 20px;
-    background: #81cbfb;
-    color: #fff;
-    transition: 0.3s linear;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 32px;
-    border: none;
+	background: #81cbfb;
+	color: #fff;
+	transition: 0.3s linear;
+	font-size: 1.1em;
+	font-weight: 500;
+	line-height: 32px;
+	border: none;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-  }
+}
 
-  .upload-file-button:hover {
+.upload-file-button:hover {
 	background: #37acf9;
-  }
+}
 
-  .sticker-edit {
+
+/*--Edit button--*/
+
+.sticker-edit {
 	position: absolute;
-	width: 35px;
-	height: 35px;
+	width: 38px;
+	height: 38px;
 	display: flex;
 	float: right;
 	border-radius: 25px;
-	padding: 4.5px;
+	padding: 6px;
 	transition: 0.3s linear;
-  }
-
-
-  .sticker-edit:before {
-	display: flex;
-    color: rgba(0, 0, 0, .3);
-	float: right;
-    font-size: 1.5em;
-    content: "\f085";
-	font-family: FontAwesome;
 }
 
+.sticker-edit:before {
+	display: flex;
+	color: rgba(0, 0, 0, .3);
+	float: right;
+	font-size: 1.5em;
+	content: "\f085";
+	font-family: FontAwesome;
+}
 
 .sticker-edit:hover {
 	cursor: pointer;
 	background: rgba(0, 0, 0, .07);
 }
-
-

@@ -1,3 +1,5 @@
+/*--Notfound message--*/
+
 .message {
 	display: flex;
 	flex-wrap: wrap;
@@ -8,8 +10,8 @@
 	background: #fff;
 	border-radius: 10px;
 	transition: 0.5s;
-    font-size: 12px;
-    box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+	font-size: 12px;
+	box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
 
 .message .message-title {
@@ -34,10 +36,9 @@
 	width: 70%;
 }
 
-
 .message-image-content {
 	display: table;
-    width: 60px;
+	width: 60px;
 	height: 60px;
 	float: left;
 	background: url(../svg/message.svg);
@@ -47,19 +48,21 @@
 	padding: 0 50px 0 20px;
 	background: #81cbfb;
 	color: #fff;
-    transition: 0.3s linear;
-    font-size: 1.4em;
-    font-weight: 500;
-    line-height: 32px;
-    float: left;
-    border-radius: 10px;
+	transition: 0.3s linear;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 32px;
+	float: left;
+	border-radius: 10px;
 }
 
 .message:hover .go-back {
-	background:#37acf9;
-    cursor: pointer;
+	background: #37acf9;
+	cursor: pointer;
 }
-/*-----------------*/
+
+
+/*--Add message--*/
 
 .message-add {
 	display: flex;
@@ -71,8 +74,8 @@
 	background: #fff;
 	border-radius: 10px;
 	transition: 0.5s;
-    font-size: 12px;
-    box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+	font-size: 12px;
+	box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
 
 .message-add-content {
@@ -90,24 +93,21 @@
 	padding: 0 20px 0 20px;
 	background: #81cbfb;
 	color: #fff;
-    transition: 0.3s linear;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 32px;
-    float: left;
-    border-radius: 10px;
+	transition: 0.3s linear;
+	font-size: 1.1em;
+	font-weight: 500;
+	line-height: 32px;
+	float: left;
+	border-radius: 10px;
 }
 
 .message-add:hover a {
-	background:#37acf9;
-    cursor: pointer;
+	background: #37acf9;
+	cursor: pointer;
 }
 
 
-
-
-
-
+/*--Print message--*/
 
 .message-print {
 	display: flex;
@@ -119,11 +119,9 @@
 	background: #fff;
 	border-radius: 10px;
 	transition: 0.5s;
-    font-size: 12px;
-    box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+	font-size: 12px;
+	box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
 }
-
-
 
 .message-print-image {
 	width: 25%;
@@ -134,10 +132,9 @@
 	padding: 12px 12px;
 }
 
-
 .message-print-image-content {
 	display: table;
-    width: 55px;
+	width: 55px;
 	height: 55px;
 	float: left;
 	background: url(../svg/printer.svg);
@@ -145,17 +142,17 @@
 
 .print-all {
 	padding: 0 10px 0 10px;
-    background: #81cbfb;
-    color: #fff;
-    transition: 0.3s linear;
-    font-size: 1.1em;
-    font-weight: 500;
-    line-height: 32px;
-    float: left;
-    border-radius: 10px;
+	background: #81cbfb;
+	color: #fff;
+	transition: 0.3s linear;
+	font-size: 1.1em;
+	font-weight: 500;
+	line-height: 32px;
+	float: left;
+	border-radius: 10px;
 }
 
 .message-print:hover .print-all {
-	background:#37acf9;
-    cursor: pointer;
+	background: #37acf9;
+	cursor: pointer;
 }
