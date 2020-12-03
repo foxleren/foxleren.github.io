@@ -205,6 +205,9 @@ select {
 	border: 1px solid #d2d8d8;
 	border-radius: 5px;
 	background: #fff;
+	color:#7c7c7c;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
 }
 
  select:hover, select:focus, textarea:hover, textarea:focus { border: 1px solid #81cbfb;} 
