@@ -19,6 +19,16 @@
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	height: 50px;
+	width: 50px;
+	color: black;
+	transition: 0.2s linear;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 32px;
+	background: rgba(0, 0, 0, .01);
+	border: 3px solid rgba(0, 0, 0, .075);
+	border-radius: 25px;
 }
 
 .sticker-filtr-content:before {
@@ -27,7 +37,7 @@
 	padding: 7px;
 	position: relative;
 	margin: 0 auto;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.5em;
 	content: "\f0b0";
 	font-family: FontAwesome;
@@ -39,7 +49,7 @@
 	padding: 7px;
 	position: relative;
 	margin: 0 auto;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.5em;
 	content: "\f014";
 	font-family: FontAwesome;
@@ -50,20 +60,6 @@
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
-}
-
-.sticker-drop-content,
-.sticker-filtr-content {
-	height: 50px;
-	width: 50px;
-	color: black;
-	transition: 0.3s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	background: rgba(0, 0, 0, .01);
-	border: 3px solid rgba(0, 0, 0, .075);
-	border-radius: 25px;
 }
 
 .sticker-filtr:hover .sticker-filtr-content:before,
@@ -84,6 +80,16 @@
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	height: 50px;
+	width: 50px;
+	color: black;
+	transition: 0.2s linear;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 32px;
+	background: rgba(0, 0, 0, .01);
+	border: 3px solid rgba(0, 0, 0, .075);
+	border-radius: 25px;
 }
 
 .sticker-plus-content:before {
@@ -92,7 +98,7 @@
 	padding: 7px 10px;
 	position: relative;
 	margin: 0 auto;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.5em;
 	content: "\f097";
 	font-family: FontAwesome;
@@ -104,7 +110,7 @@
 	padding: 6px;
 	position: relative;
 	margin: 0 auto;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.5em;
 	content: "\f02d";
 	font-family: FontAwesome;
@@ -122,20 +128,6 @@
 	margin: 0 auto;
 }
 
-.sticker-more-content,
-.sticker-plus-content {
-	height: 50px;
-	width: 50px;
-	color: black;
-	transition: 0.3s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	background: rgba(0, 0, 0, .01);
-	border: 3px solid rgba(0, 0, 0, .075);
-	border-radius: 25px;
-}
-
 .sticker-more:hover .sticker-more-content,
 .sticker-plus:hover .sticker-plus-content {
 	border-color: #2489cf;
@@ -148,6 +140,16 @@
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	height: 50px;
+	width: 50px;
+	color: black;
+	transition: 0.2s linear;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 32px;
+	background: rgba(0, 0, 0, .01);
+	border: 3px solid rgba(0, 0, 0, .075);
+	border-radius: 25px;
 }
 
 .sticker-download-content:before {
@@ -156,9 +158,9 @@
 	padding: 6px;
 	position: relative;
 	margin: 0 auto;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.4em;
-	content: "\f016";
+	content: "\f02f";
 	font-family: FontAwesome;
 }
 
@@ -172,19 +174,6 @@
 	margin: 0 auto;
 }
 
-.sticker-download-content {
-	height: 50px;
-	width: 50px;
-	color: black;
-	transition: 0.3s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	background: rgba(0, 0, 0, .01);
-	border: 3px solid rgba(0, 0, 0, .075);
-	border-radius: 25px;
-}
-
 .sticker-download:hover .sticker-download-content {
 	border-color: #2489cf;
 }
@@ -196,6 +185,16 @@
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	height: 50px;
+	width: 50px;
+	color: black;
+	transition: 0.2s linear;
+	font-size: 1.4em;
+	font-weight: 500;
+	line-height: 32px;
+	background: rgba(0, 0, 0, .01);
+	border: 3px solid rgba(0, 0, 0, .075);
+	border-radius: 25px;
 }
 
 .sticker-delete-content:before {
@@ -204,7 +203,7 @@
 	padding: 6.5px 6px;
 	position: relative;
 	margin: 0 auto;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.6em;
 	content: "\f05e";
 	font-family: FontAwesome;
@@ -218,19 +217,6 @@
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
-}
-
-.sticker-delete-content {
-	height: 50px;
-	width: 50px;
-	color: black;
-	transition: 0.3s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	background: rgba(0, 0, 0, .01);
-	border: 3px solid rgba(0, 0, 0, .075);
-	border-radius: 25px;
 }
 
 .sticker-delete:hover .sticker-delete-content {
@@ -247,19 +233,6 @@
 	margin: 0 auto;
 }
 
-.sticker-delete-content {
-	height: 50px;
-	width: 50px;
-	color: black;
-	transition: 0.3s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	background: rgba(0, 0, 0, .01);
-	border: 3px solid rgba(0, 0, 0, .075);
-	border-radius: 25px;
-}
-
 .sticker-delete:hover .sticker-delete-content {
 	border-color: #2489cf;
 }
@@ -268,11 +241,12 @@
 /*--Show--*/
 
 .button-show {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
-	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .sticker-container-show {
@@ -350,7 +324,7 @@
 .sticker-end-content {
 	min-width: 40px;
 	width: fit-content;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 	font-size: 1.4em;
 	font-weight: 500;
 	line-height: 23px;
@@ -427,7 +401,7 @@ a.disabled {
     padding: 0 10px 0 10px;
     background: #81cbfb;
     color: #fff;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     font-size: 0.95em;
     font-weight: 500;
     line-height: 32px;
@@ -451,7 +425,7 @@ a.disabled {
 	float: right;
 	border-radius: 25px;
 	padding: 6px;
-	transition: 0.3s linear;
+	transition: 0.2s linear;
 }
 
 .sticker-edit:before {
@@ -480,7 +454,7 @@ a.disabled {
     padding: 0 15px 0 15px;
     background: #81cbfb;
     color: #fff;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
     font-size: 1.2em;
     font-weight: 500;
     line-height: 32px;
