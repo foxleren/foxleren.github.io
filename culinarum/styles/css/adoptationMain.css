@@ -35,6 +35,13 @@
 	.sticker-end-content:before {
 		font-size: 0.9em;
 	}
+	.sticker-edit-1 {
+		display: initial;
+	}
+	.sticker-edit-2 {
+		display: none;
+	}
+	
 }
 
 @media(max-width: 768px) {

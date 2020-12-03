@@ -168,71 +168,6 @@ input[type=checkbox]:checked~.accordion-child:last-child {
 	padding: 0 5px;
 }
 
-.sticker-container-filtr {
-	padding: 1.5em 0.5em;
-	width: 50%;
-	text-align: center;
-}
-
-.sticker-filtr-content,
-.sticker-drop-content {
-	display: block;
-	margin: 0 auto;
-	position: relative;
-}
-
-.sticker-filtr-content:before {
-	display: block;
-	color: rgba(0, 0, 0, .075);
-	padding: 7px;
-	position: relative;
-	margin: 0 auto;
-	font-size: 1.5em;
-	content: "\f0b0";
-	font-family: FontAwesome;
-}
-
-.sticker-drop-content:before {
-	display: block;
-	color: rgba(0, 0, 0, .075);
-	padding: 7px;
-	position: relative;
-	margin: 0 auto;
-	font-size: 1.5em;
-	content: "\f014";
-	font-family: FontAwesome;
-}
-
-.sticker-drop,
-.sticker-filtr {
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-}
-
-.sticker-drop-content,
-.sticker-filtr-content {
-	height: 50px;
-	width: 50px;
-	color: black;
-	transition: 0.3s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	background: rgba(0, 0, 0, .01);
-	border: 3px solid rgba(0, 0, 0, .075);
-	border-radius: 25px;
-}
-
-.sticker-filtr:hover .sticker-filtr-content:before,
-.sticker-drop:hover .sticker-drop-content:before {
-	color: #2489cf;
-}
-
-.sticker-filtr:hover .sticker-filtr-content,
-.sticker-drop:hover .sticker-drop-content {
-	border-color: #2489cf;
-}
 
 .list {
 	display: flex;
@@ -314,6 +249,7 @@ input[type=checkbox]:checked~.accordion-child:last-child {
 .description-text {
 	text-align: start;
 	line-height: 1.3em;
+	font-size: 0.95em;
 }
 
 .recipe-characterisctics {
