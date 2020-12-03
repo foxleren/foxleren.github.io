@@ -204,6 +204,7 @@ select {
 	padding: 5px;
 	border: 1px solid #d2d8d8;
 	border-radius: 5px;
+	background: #fff;
 }
 
  select:hover, select:focus, textarea:hover, textarea:focus { border: 1px solid #81cbfb;} 
