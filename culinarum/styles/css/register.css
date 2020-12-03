@@ -116,15 +116,15 @@
 }
 
 .register-form label.register-username {
-	background-image: url("svg/icon-username.svg");
+	background: url(../svg/icon-username.svg);
 }
 
 .register-form label.register-email {
-	background-image: url("svg/icon-email.svg");
+	background: url(../svg/icon-email.svg);
 }
 
 .register-form label.register-password {
-	background-image: url("svg/icon-password.svg");
+	background: url(../svg/icon-password.svg);
 }
 
 .register-form input {
