@@ -106,7 +106,21 @@
 	cursor: pointer;
 }
 
-
+@media(max-width: 968px) {
+	@media(min-width: 650px) {
+		.message-add {
+			padding: 1em 1em;
+		}
+		.message-add-title {
+			font-size: 1.2em;
+			line-height: 25px;
+		}
+		.add-recipe {
+			padding: 0 15px 0 15px;
+			font-size: 1em;
+		}
+	}
+}
 /*--Print message--*/
 
 .message-print {

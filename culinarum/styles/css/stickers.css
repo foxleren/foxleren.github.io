@@ -409,31 +409,31 @@ a.disabled {
 }
 
 .upload-file-status {
-	order: 2;
-	width: 65%;
-	padding: 0 20px 0 20px;
-	font-size: 0.9em;
-	font-weight: 500;
-	line-height: 32px;
-	border-left: none;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border: 1px solid #81cbfb;
+    order: 2;
+    width: 65%;
+    padding: 0 10px 0 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    line-height: 32px;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid #81cbfb;
 }
 
 .upload-file-button {
-	order: 1;
-	width: 35%;
-	padding: 0 20px 0 20px;
-	background: #81cbfb;
-	color: #fff;
-	transition: 0.3s linear;
-	font-size: 1.1em;
-	font-weight: 500;
-	line-height: 32px;
-	border: none;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
+    order: 1;
+    width: 35%;
+    padding: 0 10px 0 10px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.3s linear;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 32px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .upload-file-button:hover {
@@ -466,4 +466,28 @@ a.disabled {
 .sticker-edit:hover {
 	cursor: pointer;
 	background: rgba(0, 0, 0, .07);
+}
+
+
+/*--Save edit button--*/
+
+.save-edit {
+	text-align: center;
+	padding: 1em 1em;
+}
+
+.save-edit button {
+    padding: 0 15px 0 15px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.3s linear;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 32px;
+    border: none;
+    border-radius: 10px;
+}
+.save-edit button:hover {
+	background: #37acf9;
+	cursor: pointer;
 }
