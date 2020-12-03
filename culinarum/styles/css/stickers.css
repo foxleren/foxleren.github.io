@@ -470,6 +470,10 @@ a.disabled {
 	border-bottom-left-radius: 10px;
   }
 
+  .upload-file-button:hover {
+	background: #37acf9;
+  }
+
   .extra-buttons {
 	  display: block;
 	  width: 100%;
