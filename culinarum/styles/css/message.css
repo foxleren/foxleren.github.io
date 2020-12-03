@@ -45,15 +45,15 @@
 }
 
 .go-back {
-	padding: 0 50px 0 20px;
-	background: #81cbfb;
-	color: #fff;
-	transition: 0.2s linear;
-	font-size: 1.4em;
-	font-weight: 500;
-	line-height: 32px;
-	float: left;
-	border-radius: 10px;
+    padding: 0 50px 0 20px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.2s linear;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 32px;
+    float: left;
+    border-radius: 10px;
 }
 
 .message:hover .go-back {
