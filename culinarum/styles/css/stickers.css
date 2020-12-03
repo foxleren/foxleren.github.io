@@ -474,32 +474,8 @@ a.disabled {
 	background: #37acf9;
   }
 
-  .extra-buttons {
-	  display: block;
-	  width: 100%;
-  }
-
-  .sticker-add-recipe,.sticker-print-all {
-	padding: 0 20px 0 20px;
-    transition: 0.3s linear;
-    font-size: 1.4em;
-    font-weight: 600;
-    line-height: 32px;
-    float: left;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, .01);
-    border: 2px solid rgba(0, 0, 0, .075);
-    color: rgba(0, 0, 0, .1);
-  }
-
-  .sticker-add-recipe:hover,.sticker-print-all:hover {
-	color: #2489cf;
-    cursor: pointer;
-  }
-
-  
-  .sticker-edit-1, .sticker-edit-2 {
+  .sticker-edit {
+	position: absolute;
 	width: 35px;
 	height: 35px;
 	display: flex;
@@ -509,11 +485,8 @@ a.disabled {
 	transition: 0.3s linear;
   }
 
-  .sticker-edit-2 {
-	margin-top: 10px;
-	margin-right: 10px;
-}
-  .sticker-edit-1:before, .sticker-edit-2:before {
+
+  .sticker-edit:before {
 	display: flex;
     color: rgba(0, 0, 0, .3);
 	float: right;
@@ -522,11 +495,8 @@ a.disabled {
 	font-family: FontAwesome;
 }
 
-.sticker-edit-1 {
-	display: none;
-}
 
-.sticker-edit-1:hover, .sticker-edit-2:hover {
+.sticker-edit:hover {
 	cursor: pointer;
 	background: rgba(0, 0, 0, .07);
 }

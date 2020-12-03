@@ -59,3 +59,103 @@
 	background:#37acf9;
     cursor: pointer;
 }
+/*-----------------*/
+
+.message-add {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-height: 165px;
+	width: fit-content;
+	padding: 1em 2em;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.5s;
+    font-size: 12px;
+    box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+}
+
+.message-add-content {
+	width: 100%;
+}
+
+.message-add-title {
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 1.3em;
+	line-height: 35px;
+}
+
+.add-recipe {
+	padding: 0 20px 0 20px;
+	background: #81cbfb;
+	color: #fff;
+    transition: 0.3s linear;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 32px;
+    float: left;
+    border-radius: 10px;
+}
+
+.message-add:hover a {
+	background:#37acf9;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.message-print {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-height: 165px;
+	width: fit-content;
+	padding: 1em 1em;
+	background: #fff;
+	border-radius: 10px;
+	transition: 0.5s;
+    font-size: 12px;
+    box-shadow: 4px 5px 15px 0px rgba(34, 60, 80, 0.2);
+}
+
+
+
+.message-print-image {
+	width: 25%;
+}
+
+.message-print-content {
+	width: 75%;
+	padding: 12px 12px;
+}
+
+
+.message-print-image-content {
+	display: table;
+    width: 55px;
+	height: 55px;
+	float: left;
+	background: url(../svg/printer.svg);
+}
+
+.print-all {
+	padding: 0 10px 0 10px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.3s linear;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 32px;
+    float: left;
+    border-radius: 10px;
+}
+
+.message-print:hover .print-all {
+	background:#37acf9;
+    cursor: pointer;
+}

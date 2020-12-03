@@ -212,6 +212,7 @@ input[type=checkbox]:checked~.accordion-child:last-child {
 .recipe-tags {
 	display: flex;
 	flex-wrap: wrap;
+	padding: 1em 0;
 }
 
 .tag-content {
@@ -229,6 +230,7 @@ input[type=checkbox]:checked~.accordion-child:last-child {
 	line-height: 32px;
 	background: #c4e7fd;
 	border-radius: 10px;
+	float: left;
 }
 
 .recipe-second-part {
