@@ -322,7 +322,10 @@
 
 
 
-
+a.disabled {
+	pointer-events: none;
+	cursor: default;
+	}
 
 
 
@@ -377,3 +380,28 @@
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
   }
+
+  .extra-buttons {
+	  display: block;
+	  width: 100%;
+  }
+
+  .sticker-add-recipe,.sticker-print-all {
+	padding: 0 20px 0 20px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.3s linear;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 32px;
+	float: left;
+	margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .sticker-add-recipe:hover,.sticker-print-all:hover {
+	background:#37acf9;
+    cursor: pointer;
+  }
+
+  
