@@ -445,12 +445,19 @@ a.disabled {
 
 /*--Save edit button--*/
 
-.save-edit {
+.edit-buttons {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
 	padding: 1em 1em;
 }
 
-.save-edit button {
+.edit-buttons-content {
+	width: 50%;
+}
+
+.save-recipe, .delete-recipe{
     padding: 0 15px 0 15px;
     background: #81cbfb;
     color: #fff;
@@ -461,7 +468,7 @@ a.disabled {
     border: none;
     border-radius: 10px;
 }
-.save-edit button:hover {
+.save-recipe:hover, .delete-recipe:hover {
 	background: #37acf9;
 	cursor: pointer;
 }
