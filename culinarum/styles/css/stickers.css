@@ -319,3 +319,61 @@
 .sticker-end-content:before {
 	left: 1px;
 }
+
+
+
+
+
+
+
+
+
+/**/
+
+.upload-file {
+	width: 100%;
+	position: relative;
+	margin: 15px 0;
+	text-align: center;
+  }
+  
+  .upload-file-input {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+  }
+  
+  .new-upload-file-input {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	cursor: pointer;
+  }
+  
+  .upload-file-status {
+	  order: 2;
+	width: 65%;
+	padding: 0 20px 0 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    line-height: 32px;
+    border-left: none;
+    border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px solid #81cbfb;
+  }
+  
+  .upload-file-button {
+	  order: 1;
+	width: 35%;
+	padding: 0 20px 0 20px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.3s linear;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 32px;
+    border: none;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+  }
