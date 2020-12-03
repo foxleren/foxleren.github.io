@@ -388,19 +388,20 @@ a.disabled {
 
   .sticker-add-recipe,.sticker-print-all {
 	padding: 0 20px 0 20px;
-    background: #81cbfb;
-    color: #fff;
     transition: 0.3s linear;
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 32px;
-	float: left;
-	margin-bottom: 20px;
+    float: left;
+    margin-bottom: 20px;
     border-radius: 10px;
+    background: rgba(0, 0, 0, .01);
+    border: 2px solid rgba(0, 0, 0, .075);
+    color: rgba(0, 0, 0, .1);
   }
 
   .sticker-add-recipe:hover,.sticker-print-all:hover {
-	background:#37acf9;
+	color: #2489cf;
     cursor: pointer;
   }
 
