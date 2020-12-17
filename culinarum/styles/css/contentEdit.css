@@ -51,6 +51,12 @@
 	border-radius: 10px;
 }
 
+.recipe-tags {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5em 1em !important;
+}
+
 .recipe-second-part {
 	order: 2;
 	width: 50%;

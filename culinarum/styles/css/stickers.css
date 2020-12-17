@@ -457,7 +457,19 @@ a.disabled {
 	width: 50%;
 }
 
-.save-recipe, .delete-recipe{
+.delete-recipe {
+    padding: 4px 15px;
+    background: #81cbfb;
+    color: #fff;
+    transition: 0.2s linear;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 32px;
+    border: none;
+    border-radius: 10px;
+}
+
+.save-recipe{
     padding: 0 15px 0 15px;
     background: #81cbfb;
     color: #fff;
