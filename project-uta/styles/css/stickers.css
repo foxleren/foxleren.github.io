@@ -1,0 +1,56 @@
+.sticker-container {
+    height: 35px;
+    width: 35px;
+    padding: 3px 2px;
+    border-radius: 20px;
+}
+
+.sticker-container:first-child {
+    float: left;
+}
+
+.sticker-container:last-child {
+    float: right;
+}
+.sticker-login {
+	display: table;
+    width: 30px;
+    height: 30px;
+    background: url(../svg/login.svg);
+}
+
+.sticker-register {
+    display: table;
+    width: 30px;
+    height: 30px;
+    background: url(../svg/register.svg);
+}
+
+.sticker-container:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .07);
+}
+
+@media(max-width: 700px) {
+    .head-stickers-container {
+        padding: 4px 0;
+        width: 70px;
+    }
+
+    .sticker-container {
+        height: 30px;
+        width: 30px;
+    }
+
+    .sticker-login {
+        width: 25px;
+        height: 25px;
+        background: url(../svg/adoptation/login.svg);
+    }
+
+    .sticker-register {
+        width: 25px;
+        height: 25px;
+        background: url(../svg/adoptation/register.svg);
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="styles\css\basic.css">
+      <link rel="stylesheet" href="styles\css\header.css">
+      <link rel="stylesheet" href="styles\css\adoptationHeader.css">
+      <link rel="stylesheet" href="styles\css\styleMain.css">
+      <link rel="stylesheet" href="styles\css\adoptationMain.css">
+      <link rel="stylesheet" href="styles\css\stickers.css">
+      <link rel="icon" href="styles\svg\favicon.svg" type="image/png ">
+      <title>Money.Manage</title>
+   </head>
+   <body>
+      <div>
+         <header>
+            <div class="header-container">
+               <div class="nav-toggle-container">
+                  <a aria-label="mobile menu" class="nav-toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  </a>
+               </div>
+               <div class="logo-container">
+                  <a href="index.html" class="logotype">Money.Manage</a>
+               </div>
+                <!-- 
+                    <div class="date-container">
+                  <div class="header-date">12.10.20, 18:30</div>
+               </div>
+                -->  
+                <div class="head-stickers-container">
+                  <div class="sticker-container">
+                       <a class="sticker-login"></a>
+                   </div>
+                   <div class="sticker-container">
+                     <a class="sticker-register"></a>
+                 </div>
+                </div>
+                
+            </div>
+         </header>
+            <div class="side-menu">
+               <div class="menu-links-container">
+                  <a class="menu-link">Счет</a>
+                  <span></span>
+                  <a class="menu-link">Планирование</a>
+                  <span></span>
+                  <a class="menu-link">Категории</a>
+                  <span></span>
+                  <a class="menu-link">История</a>
+                  <span></span>
+                  <a class="menu-link">Добавить запись</a>
+               </div>
+            </div>         
+      </div>
+      
+    <!--
+      <div class="register-modal">
+         <div class="register-modal-container">
+            <ul class="register-switcher">
+               <li><a href="#">Sign in</a></li>
+               <li><a href="#">New account</a></li>
+            </ul>
+            <div id="signin-window">
+               <form class="register-form">
+                  <p class="fieldset">
+                     <label class="register-image register-email" for="signin-email"></label>
+                     <input class="register-input " id="signin-email" type="email" placeholder="E-mail">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <label class="register-image register-password" for="signin-password"></label>
+                     <input class="register-input" id="signin-password" type="text"  placeholder="Password">
+                     <a href="#0" class="hide-password">Hide</a>
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <input type="checkbox" id="remember-me" checked>
+                     <label class="label-remember-me"for="remember-me">Remember me</label>
+                  </p>
+                  <p class="fieldset">
+                     <button class="register-input" type="submit">Login</button>
+                  </p>
+                  <p class="register-forgot-message">
+                     <a href="#0">Forgot your password?</a>
+                  </p>
+               </form>
+            </div>
+            <div id="signup-window">
+               <form class="register-form">
+                  <p class="fieldset">
+                     <label class="register-image register-username" for="signup-username"></label>
+                     <input class="register-input " id="signup-username" type="text" placeholder="Username">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <label class="register-image register-email" for="signup-email"></label>
+                     <input class="register-input " id="signup-email" type="email" placeholder="E-mail">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <label class="register-image register-password" for="signup-password"></label>
+                     <input class="register-input " id="signup-password" type="text"  placeholder="Password">
+                     <a href="#0" class="hide-password">Hide</a>
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <input type="checkbox" id="accept-terms">
+                     <label class="label-agree"for="accept-terms">I agree to the <a class="register-terms" href="#">Terms</a></label>
+                  </p>
+                  <p class="fieldset">
+                     <button class="register-input" type="submit">Create new account</button>
+                  </p>
+               </form>
+            </div>
+            <div id="register-reset-password">
+               <p class="register-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+               <form class="register-form">
+                  <p class="fieldset">
+                     <label class="register-image register-email" for="reset-email"></label>
+                     <input class="register-input " id="reset-email" type="email" placeholder="E-mail">
+                     <span class="register-error-message">Error message here!</span>
+                  </p>
+                  <p class="fieldset">
+                     <button class="register-input" type="submit">Reset password</button>
+                  </p>
+               </form>
+               <p class="register-forgot-message"><a href="#0">Back to log-in</a></p>
+            </div>
+            <a href="#" class="register-close">Close</a>
+         </div>
+      </div> -->
+      <div class="content-box">
+         <div class="main-page">
+            
+
+            </div>
+         </div>
+      </div>
+
+
+     <!--      <div class="gradient-barier"></div>
+
+         <footer>
+         <div class="autograph">
+            <div class="made-by">made by
+            </div>
+            <div class="authors">
+               <div class="f-p">foxleren & paw1a</div>
+               <div class="frontend">Frontend</div>
+               <div class="backend">Backend</div>
+            </div>
+         </div>
+      </footer>
+     --> 
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js\script.js"></script>
+   </body>
+</html>
