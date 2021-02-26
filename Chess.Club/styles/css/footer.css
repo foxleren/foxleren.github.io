@@ -1,0 +1,44 @@
+footer {
+	padding: 1em 0;
+	color: rgba(255, 255, 255, 0.5);;
+	background-color: #051e32;
+	text-align: center;
+}
+
+.autograph {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.made-by {
+	font-family: 'Courgette', cursive;
+	font-size: 1.5em;
+}
+
+.authors {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.f-p {
+	width: 100%;
+	font-family: 'Courgette', cursive;
+	font-size: 2em;
+}
+
+.frontend,
+.backend {
+	width: 50%;
+	font-size: 0.8em;
+	font-weight: 600;
+	padding: 5px 45px;
+}
+
+.frontend {
+	text-align: right;
+}
+
+.backend {
+	text-align: left;
+}

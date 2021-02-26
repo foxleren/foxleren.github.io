@@ -1,0 +1,57 @@
+.main {
+    background: linear-gradient(to bottom right, #162f50 30%, #700f31 88%);
+    height: 800px;
+}
+/*
+.main-container {
+    
+    background-color: #141414;
+    height: 1800px;
+}*/
+.play-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.desk {
+    width: 50%;
+    padding: 0 20px;
+    text-align: center;
+}
+.play-box img {
+    max-width: 400px;
+    width: 100%;
+}
+
+.play-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+}
+.button-play-online, .button-play-offline {
+    width: 100%;
+    max-width: 350px;
+    max-height: 100px;
+    margin: 65px;
+	padding: 0 20px 0 20px;
+	background-color: #7fa650;
+	color: #fff;
+	transition: 0.2s linear;
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 40px;
+	float: left;
+    border-radius: 10px;
+    box-shadow: 0 -3px  #718d4e inset;
+}
+
+.button-play-online:hover, .button-play-offline:hover {
+    background:  #88b453;
+    box-shadow: 0 -3px  #77994e inset;
+	cursor: pointer;
+}
