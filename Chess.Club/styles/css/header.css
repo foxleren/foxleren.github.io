@@ -7,7 +7,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -30,27 +30,65 @@ header {
 }
 
 .logo a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 2.5em;
-    max-width: 200px;
+    max-width: 250px;
     color: #f9f9f9;
     text-shadow: 2px 2px 1px rgb(0 0 0 / 40%);
-    padding: 12px 15px;
+    padding: 15px 15px;
+}
+
+.register-links {
+    order: 2;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.sign-in, .sign-up {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4em;
+    color: rgb(29, 161, 242);
+    padding: 4px 10px;
+    letter-spacing: 0.3px;
+    line-height: 21px;
+    border: 2px solid rgb(29, 161, 242);
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.sign-up {
+    margin-left: 5px;
+}
+
+.sign-in {
+    margin-right: 5px;
+}
+
+
+
+.sign-in:hover, .sign-up:hover {
+    background: rgb(29, 161, 242, 0.157);
 }
 
 .menu {
     order: 2;
     width: 50%;
     padding: 20px 15px;
-
     text-align: center;
 }
 
 .menu-name {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 1.5em;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
     color: #a5a5a5;
+    letter-spacing: 0.8px;
     transition: 0.3s;
+   
 }
 
 .menu-name:hover {
@@ -126,7 +164,7 @@ header {
     border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 
-.menu-link, .sign-in, .sign-up {
+.menu-link, .menu-sign-in, .menu-sign-up {
     width: 100%;
     text-align: left;
     padding: 10px 15px;
@@ -135,7 +173,7 @@ header {
     font-size: 1.1em;
 }
 
-.menu-link:hover, .sign-in:hover, .sign-up:hover {
+.menu-link:hover, .menu-sign-in:hover, .menu-sign-up:hover {
     color: rgba(255, 255, 255, 0.9);
     background-color: #2b3e68;
 }
@@ -146,7 +184,11 @@ header {
     order: 3;
     width: 100%;
 }
-.sign-in, .sign-up {
+.menu-sign-in, .menu-sign-up {
     width: 50% !important;
     text-align: center;
 }
+
+
+
+

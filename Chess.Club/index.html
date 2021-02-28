@@ -8,13 +8,21 @@
 
     <link rel="stylesheet" href="styles/css/basic.css">
     <link rel="stylesheet" href="styles/css/header.css">
+    <link rel="stylesheet" href="styles/css/headerAdopt.css">
+    <link rel="stylesheet" href="styles/css/register.css">
     <link rel="stylesheet" href="styles/css/main.css">
     <link rel="stylesheet" href="styles/css/barier.css">
     <link rel="stylesheet" href="styles/css/footer.css">
 
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -22,19 +30,26 @@
         <div class="header-container">
             <div class="logo-container">
                 <div class="logo" href="#">
-                    <img src="styles/svg/pawn.svg"> 
+                    <img src="styles/svg/logo.svg"> 
                     <a href="#">Chess.Club</a>
                 </div>
             </div>
-            <div class="menu">
-                <a class="menu-name">Меню</a>
+
+            <div class="register-links">
+                
+                <a class="sign-in" href="#">Вход</a>
+                <a class="sign-up" href="#">Регистрация</a>
+            </div>
+
+          <!--  <div class="menu">
+                <a class="menu-name">Вход/Регистрация</a>
                 <div class="menu-window">
                     <div class="menu-firstHalf">
                         <div class="nickname-container">
                             <div class="nickname-text">foxleren</div>
                         </div>
                         <div class="icon-container">
-                            <img src="styles/svg/pawn.svg">
+                            <img src="styles/svg/logo.svg">
                         </div>
                     </div>
                     <div class="menu-secondHalf">
@@ -43,13 +58,99 @@
                         <a class="menu-link" href="">Друзья</a>
                     </div>
                     <div class="menu-thirdHalf">
-                        <a class="sign-in" href="">Вход</a>
-                        <a class="sign-up" href="">Регистрация</a>
+                        <a class="menu-sign-in" href="">Вход</a>
+                        <a class="menu-sign-up" href="">Регистрация</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
+
+
+
+    <div class="register-modal">
+        <div class="register-modal-container">
+           <ul class="register-switcher">
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">New account</a></li>
+           </ul>
+           <div id="signin-window">
+              <form class="register-form">
+                 <p class="fieldset">
+                    <label class="register-image register-email" for="signin-email"></label>
+                    <input class="register-input " id="signin-email" type="email" placeholder="E-mail">
+                    <span class="register-error-message">Error message here!</span>
+                 </p>
+                 <p class="fieldset">
+                    <label class="register-image register-password" for="signin-password"></label>
+                    <input class="register-input" id="signin-password" type="text"  placeholder="Password">
+                    <a href="#0" class="hide-password">Hide</a>
+                    <span class="register-error-message">Error message here!</span>
+                 </p>
+                 <p class="fieldset">
+                    <input type="checkbox" id="remember-me" checked>
+                    <label class="label-remember-me"for="remember-me">Remember me</label>
+                 </p>
+                 <p class="fieldset">
+                    <button class="register-input" type="submit">Login</button>
+                 </p>
+                 <p class="register-forgot-message">
+                    <a href="#0">Forgot your password?</a>
+                 </p>
+              </form>
+           </div>
+           <div id="signup-window">
+              <form class="register-form">
+                 <p class="fieldset">
+                    <label class="register-image register-username" for="signup-username"></label>
+                    <input class="register-input " id="signup-username" type="text" placeholder="Username">
+                    <span class="register-error-message">Error message here!</span>
+                 </p>
+                 <p class="fieldset">
+                    <label class="register-image register-email" for="signup-email"></label>
+                    <input class="register-input " id="signup-email" type="email" placeholder="E-mail">
+                    <span class="register-error-message">Error message here!</span>
+                 </p>
+                 <p class="fieldset">
+                    <label class="register-image register-password" for="signup-password"></label>
+                    <input class="register-input " id="signup-password" type="text"  placeholder="Password">
+                    <a href="#0" class="hide-password">Hide</a>
+                    <span class="register-error-message">Error message here!</span>
+                 </p>
+                 <p class="fieldset">
+                    <input type="checkbox" id="accept-terms">
+                    <label class="label-agree"for="accept-terms">I agree to the <a class="register-terms" href="#">Terms</a></label>
+                 </p>
+                 <p class="fieldset">
+                    <button class="register-input" type="submit">Create new account</button>
+                 </p>
+              </form>
+           </div>
+           <div id="register-reset-password">
+              <p class="register-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+              <form class="register-form">
+                 <p class="fieldset">
+                    <label class="register-image register-email" for="reset-email"></label>
+                    <input class="register-input " id="reset-email" type="email" placeholder="E-mail">
+                    <span class="register-error-message">Error message here!</span>
+                 </p>
+                 <p class="fieldset">
+                    <button class="register-input" type="submit">Reset password</button>
+                 </p>
+              </form>
+              <p class="register-forgot-message"><a href="#0">Back to log-in</a></p>
+           </div>
+           <a href="#" class="register-close">Close</a>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
 
 <div class="main">
     <div class="main-container">
@@ -82,5 +183,8 @@
 </footer>
 
 </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
     <script src="js\script.js"></script>
+    <script src="js\modal.js"></script>
 </html>

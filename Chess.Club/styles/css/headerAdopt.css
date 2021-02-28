@@ -1,0 +1,91 @@
+@media (max-width: 1024px) {
+    .register-links {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 50px;
+    }
+
+    .logo a {
+        font-size: 2.2em;
+        padding: 17px 15px;
+    }
+
+    .sign-in, .sign-up {
+        line-height: 13px;
+        font-size: 1.2em;
+    }
+
+    .register-links {
+        padding: 21px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 5px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .logo a {
+        font-size: 1.5em;
+        line-height: 58px;
+        padding: 5px 5px;
+    }
+
+    .sign-in, .sign-up {
+        font-size: 1em;
+        line-height: 11px;
+    }
+
+    .register-links {
+        padding: 22px 5px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-container {
+        justify-content: space-between;
+    }
+    header {
+        padding: 5px;
+    }
+
+    .logo-container {
+        width: 45%;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .logo a {
+        font-size: 1.2em;
+        line-height: 62px;
+    }
+    
+    .register-links {
+        width: 55%;
+        padding: 23px 5px;
+        line-height: 18px;
+    }
+
+    .sign-in, .sign-up {
+        padding: 3px 6px;
+        font-size: 0.9em;
+        line-height: 15px;
+    }
+
+    .sign-up {
+         margin-left: 0;
+    }
+
+    
+}
