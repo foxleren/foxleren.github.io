@@ -1,6 +1,8 @@
 .gradient-barier {
-	background-color: #085085;
-    background-image: linear-gradient(315deg, #b58ecc 0%, #085085 74%);
+
+	background-color: #009ffd;
+background-image: linear-gradient(315deg, #009ffd 0%, #2a2a72 74%);
+	
 	width: 100%;
 	height: 5px;
 	margin-top: -3px;

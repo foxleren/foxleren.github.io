@@ -20,7 +20,7 @@
 	position: relative;
 	width: 90%;
 	max-width: 400px;
-	background: #FFF;
+	background: #1e2b49;
 	margin: 3em auto 4em;
 	cursor: auto;
 	border-radius: 10px;
@@ -116,15 +116,15 @@
 }
 
 .register-form label.register-username {
-	background: url(../svg/icon-username.svg);
+	background: url(../svg/user.svg);
 }
 
 .register-form label.register-email {
-	background: url(../svg/icon-email.svg);
+	background: url(../svg/email.svg);
 }
 
 .register-form label.register-password {
-	background: url(../svg/icon-password.svg);
+	background: url(../svg/password.svg);
 }
 
 .register-form input {
@@ -135,8 +135,9 @@
 
 .register-form .register-input {
 	width: 100%;
+	background: #21303e;
 	padding: 12px 20px 12px 50px;
-	border: 1px solid #d2d8d8;
+	border: 2px solid rgb(29, 161, 242);
 	border-radius: 10px;
 }
 
@@ -263,6 +264,9 @@
 	padding: 0 0 20px 0;
 }
 
+.register-forgot-message a {
+	color: #f9f9f9;
+}
 .register-forgot-message a:hover {
 	color: #2489cf;
 }
@@ -322,6 +326,7 @@
 	position: relative;
 	display: inline-block;
 	padding-left: 22px;
+	color: #f9f9f9;
 }
 
 .fieldset .label-remember-me:before,
