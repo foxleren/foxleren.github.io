@@ -1,0 +1,141 @@
+.menu {
+    order: 2;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-link-container {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border: 2px solid rgb(29, 161, 242);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.menu-link-container:hover {
+    cursor: pointer;
+}
+.menu-link-container img {
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+}
+
+.menu-name:hover {
+    cursor: pointer;
+    color: #efefef;
+}
+.menu-window {
+    max-width: 300px;
+    background:#1e2b49;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 75px;
+    max-height: 0;
+   /* transition: 0.5s ease-in-out; */
+    overflow: hidden;
+    color: #efefef;
+    box-shadow: 0 3.4rem 2.5rem rgb(0 0 0 / 12%), 
+                0 1.2rem 3.2rem rgb(0 0 0 / 16%), 
+                0 5rem 5.6rem rgb(0 0 0 / 24%);
+}
+
+.menu-window.open {
+    max-height: 500px;
+}
+
+.menu-firstHalf {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    /*border-bottom: 2px solid rgba(255, 255, 255, 0.7); */
+}
+
+.nickname-container {
+    width: 55%;
+    float: left;
+    text-align: center;
+    padding: 10px 5px 10px 15px;
+}
+
+.nickname-text {
+    overflow: hidden;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.level-container {
+    padding: 4px 10px 4px 5px;
+    display: flex;
+}
+
+.level-number {
+    padding: 10px 0px;
+    margin-right: 3px;
+}
+
+.level-text {
+    padding: 8px 0px;
+    margin-right: 5px;
+}
+
+.level-container img {
+    width: 35px;
+    border-radius: 8px;
+}
+
+.menu-secondHalf {
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+    width: 100%;
+}
+
+.menu-link {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    transition: 0.3s ease;
+    font-size: 1.1em;
+}
+
+
+.menu-link:hover, .menu-sign-in:hover, .menu-sign-up:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: #2b3e68;
+}
+
+.menu-link img {
+    width: 25px;
+}
+
+.menu-link-text {
+    padding: 6px 12px;
+}
+
+
+@media (max-width: 576px) {
+    .menu {
+        justify-content: flex-end;
+    }
+    .menu-window.open {
+        
+        top: 70px;
+        right: 0;
+    }
+}

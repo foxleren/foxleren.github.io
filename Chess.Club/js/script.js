@@ -1,4 +1,4 @@
-let menu = document.querySelector('.menu-name')
+let menu = document.querySelector('.menu-link-container')
 let menuWindow = document.querySelector('.menu-window')
 
 menu.addEventListener('click', function () {

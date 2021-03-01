@@ -18,6 +18,7 @@ header {
     order: 1;
     width: 50%; 
 }
+
 .logo {
     display: flex;
     flex-wrap: wrap;
@@ -68,126 +69,10 @@ header {
     margin-right: 5px;
 }
 
-
-
 .sign-in:hover, .sign-up:hover {
     background: rgb(29, 161, 242, 0.157);
 }
 
-.menu {
-    order: 2;
-    width: 50%;
-    padding: 20px 15px;
-    text-align: center;
-}
-
-.menu-name {
-    
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.4em;
-    color: #a5a5a5;
-    letter-spacing: 0.8px;
-    transition: 0.3s;
-   
-}
-
-.menu-name:hover {
-    cursor: pointer;
-    color: #efefef;
-}
-.menu-window {
-    max-width: 300px;
-    background:#1e2b49;
-    border-radius: 10px;
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    top: 85px;
-    right: 0;
-    max-height: 0;
-    order: 3;
-    text-transform: none;
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-    color: #efefef;
-    box-shadow: 0 3.4rem 2.5rem rgb(0 0 0 / 12%), 
-                0 1.2rem 3.2rem rgb(0 0 0 / 16%), 
-                0 5rem 5.6rem rgb(0 0 0 / 24%);
-}
-
-.menu-window.open {
-    max-height: 500px;
-}
-
-.menu-firstHalf {
-    order: 1;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 0;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-}
-
-.nickname-container {
-    width: 82%;
-    float: left;
-    text-align: center;
-    padding: 12px 15px;
-}
-
-.nickname-text {
-    overflow: hidden;
-    font-size: 1.3em;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    text-align: left;
-}
-
-.icon-container {
-    float: right;
-}
-
-.icon-container img {
-    width: 40px;
-    border-radius: 15px;
-}
-
-.menu-secondHalf {
-    display: flex;
-    flex-wrap: wrap;
-    order: 2;
-    width: 100%;
-}
-
-.menu-secondHalf {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
-}
-
-.menu-link, .menu-sign-in, .menu-sign-up {
-    width: 100%;
-    text-align: left;
-    padding: 10px 15px;
-    color: rgba(255, 255, 255, 0.6);
-    transition: 0.3s ease;
-    font-size: 1.1em;
-}
-
-.menu-link:hover, .menu-sign-in:hover, .menu-sign-up:hover {
-    color: rgba(255, 255, 255, 0.9);
-    background-color: #2b3e68;
-}
-
-.menu-thirdHalf {
-    display: flex;
-    flex-wrap: wrap;
-    order: 3;
-    width: 100%;
-}
-.menu-sign-in, .menu-sign-up {
-    width: 50% !important;
-    text-align: center;
-}
 
 
 
