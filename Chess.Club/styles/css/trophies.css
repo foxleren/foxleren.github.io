@@ -1,0 +1,83 @@
+.trophies-container {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.trophies-header {
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+    padding: 35px 30px;
+}
+
+.trophies-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.trophy-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trophy-container {
+    text-align: center;
+    padding: 50px 20px 20px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.trophy-container:hover {
+    cursor: pointer;
+    background: rgb(29, 161, 242, 0.157);
+}
+
+.trophy-name {
+    letter-spacing: 0.5px;
+    padding: 30px 0;
+}
+
+.trophies-container img {
+    width: 100px;
+}
+
+
+.trophyBig-background {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: rgba(29, 37, 73, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s;
+    text-align: center;
+}
+.trophyBig-container {
+    max-width: 300px;
+    padding: 10px;
+    margin: 3em auto 4em;
+    transform: translateY(0);
+    transition: 0.3s ease;
+}
+
+.trophyBig-background.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trophyBig-background.open .trophyBig-container {
+    transform: translateY(200px);
+}
+
+.trophyBig-container img {
+    width: 200px;
+}
+
+.trophyBig-name {
+    letter-spacing: 0.5px;
+    padding: 30px 0;
+}

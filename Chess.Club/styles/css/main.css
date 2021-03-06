@@ -1,7 +1,7 @@
 .main {
     display: flex;
     flex-flow: wrap;
-    justify-content: ;
+    /*justify-content: center;*/
     background: #0e2441;
     max-width: 1500px;
     height: 800px;

@@ -30,194 +30,183 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <div class="logo" href="#">
-                    <img src="styles/svg/logo.svg"> 
-                    <a href="#">Chess.Club</a>
+       <div class="header-container">
+          <div class="logo-container">
+             <div class="logo" href="#">
+                <img src="styles/svg/logo.svg"> 
+                <a href="index.html">Chess.Club</a>
+             </div>
+          </div>
+          <!--           
+             <div class="register-links">
+                  <a class="sign-in" href="#">Вход</a>
+                  <a class="sign-up" href="#">Регистрация</a>
+              </div>
+             
+             
+             -->
+          <div class="menu">
+             <a class="menu-link-container">
+             <img src="styles/svg/foxleren_ava.jpg">
+             </a>
+             <div class="menu-window">
+                <div class="menu-firstHalf">
+                   <div class="nickname-container">
+                      <div class="nickname-text">foxleren</div>
+                   </div>
+                   <div class="level-container">
+                      <div class="level-number">12</div>
+                      <div class="level-text">уровень</div>
+                      <img src="styles/svg/stars.svg" href="#">
+                   </div>
                 </div>
-            </div>
-<!--           
-               <div class="register-links">
-                    <a class="sign-in" href="#">Вход</a>
-                    <a class="sign-up" href="#">Регистрация</a>
+                <div class="menu-secondHalf">
+                   <a class="menu-link" href="">
+                      <img src="styles/svg/user.svg">
+                      <div class="menu-link-text">Профиль</div>
+                   </a>
+                   <a class="menu-link" href="">
+                      <img src="styles/svg/friends.svg">
+                      <div class="menu-link-text">Друзья</div>
+                   </a>
+                   <a class="menu-link" href="trophies.html">
+                      <img src="styles/svg/trophies.svg">
+                      <div class="menu-link-text">Достижения</div>
+                   </a>
+                   <a class="menu-link" href="">
+                      <img src="styles/svg/log-out.svg">
+                      <div class="menu-link-text">Выход</div>
+                   </a>
                 </div>
-           
-            
--->
-            <div class="menu">
-                <a class="menu-link-container">
-                    <img src="styles/svg/foxleren_ava.jpg">
-                </a>
-                
-                <div class="menu-window">
-                    <div class="menu-firstHalf">
-                        <div class="nickname-container">
-                            <div class="nickname-text">foxleren</div>
-                        </div>
-                        <div class="level-container">
-                            <div class="level-number">12</div>
-                            <div class="level-text">уровень</div>
-                            <img src="styles/svg/stars.svg" href="#">
-                        </div>
-                    </div>
-                    <div class="menu-secondHalf">
-                        <a class="menu-link" href="">
-                            <img src="styles/svg/user.svg" href="#">
-                            <div class="menu-link-text">Профиль</div>
-                        </a>
-                        <a class="menu-link" href="">
-                            <img src="styles/svg/friends.svg" href="#">
-                            <div class="menu-link-text">Друзья</div>
-                        </a>
-                        <a class="menu-link" href="">
-                            <img src="styles/svg/trophies.svg" href="#">
-                            <div class="menu-link-text">Трофеи</div>
-                        </a>
-                        <a class="menu-link" href="">
-                            <img src="styles/svg/log-out.svg" href="#">
-                            <div class="menu-link-text">Выход</div>
-                        </a>
-                    </div>
-                </div>
-            </div> 
-        </div>
+             </div>
+          </div>
+       </div>
     </header>
-
-
-
     <div class="register-modal">
-        <div class="register-modal-container">
-           <ul class="register-switcher">
-              <li><a href="#">Sign in</a></li>
-              <li><a href="#">New account</a></li>
-           </ul>
-           <div id="signin-window">
-              <form class="register-form">
-                 <p class="fieldset">
-                    <label class="register-image register-email" for="signin-email"></label>
-                    <input class="register-input " id="signin-email" type="email" placeholder="E-mail">
-                    <span class="register-error-message">Error message here!</span>
-                 </p>
-                 <p class="fieldset">
-                    <label class="register-image register-password" for="signin-password"></label>
-                    <input class="register-input" id="signin-password" type="text"  placeholder="Password">
-                    <a href="#0" class="hide-password">Hide</a>
-                    <span class="register-error-message">Error message here!</span>
-                 </p>
-                 <p class="fieldset">
-                    <input type="checkbox" id="remember-me" checked>
-                    <label class="label-remember-me"for="remember-me">Remember me</label>
-                 </p>
-                 <p class="fieldset">
-                    <button class="register-input" type="submit">Login</button>
-                 </p>
-                 <p class="register-forgot-message">
-                    <a href="#0">Forgot your password?</a>
-                 </p>
-              </form>
-           </div>
-           <div id="signup-window">
-              <form class="register-form">
-                 <p class="fieldset">
-                    <label class="register-image register-username" for="signup-username"></label>
-                    <input class="register-input " id="signup-username" type="text" placeholder="Username">
-                    <span class="register-error-message">Error message here!</span>
-                 </p>
-                 <p class="fieldset">
-                    <label class="register-image register-email" for="signup-email"></label>
-                    <input class="register-input " id="signup-email" type="email" placeholder="E-mail">
-                    <span class="register-error-message">Error message here!</span>
-                 </p>
-                 <p class="fieldset">
-                    <label class="register-image register-password" for="signup-password"></label>
-                    <input class="register-input " id="signup-password" type="text"  placeholder="Password">
-                    <a href="#0" class="hide-password">Hide</a>
-                    <span class="register-error-message">Error message here!</span>
-                 </p>
-                 <p class="fieldset">
-                    <input type="checkbox" id="accept-terms">
-                    <label class="label-agree"for="accept-terms">I agree to the <a class="register-terms" href="#">Terms</a></label>
-                 </p>
-                 <p class="fieldset">
-                    <button class="register-input" type="submit">Create new account</button>
-                 </p>
-              </form>
-           </div>
-           <div id="register-reset-password">
-              <p class="register-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
-              <form class="register-form">
-                 <p class="fieldset">
-                    <label class="register-image register-email" for="reset-email"></label>
-                    <input class="register-input " id="reset-email" type="email" placeholder="E-mail">
-                    <span class="register-error-message">Error message here!</span>
-                 </p>
-                 <p class="fieldset">
-                    <button class="register-input" type="submit">Reset password</button>
-                 </p>
-              </form>
-              <p class="register-forgot-message"><a href="#0">Back to log-in</a></p>
-           </div>
-           <a href="#" class="register-close">Close</a>
-        </div>
-     </div>
-
-
-<div class="main">
-    <div class="top-rating">
-        <div class="rating-container">
-            <div class="rating-header-container">
+       <div class="register-modal-container">
+          <ul class="register-switcher">
+             <li><a href="#">Sign in</a></li>
+             <li><a href="#">New account</a></li>
+          </ul>
+          <div id="signin-window">
+             <form class="register-form">
+                <p class="fieldset">
+                   <label class="register-image register-email" for="signin-email"></label>
+                   <input class="register-input " id="signin-email" type="email" placeholder="E-mail">
+                   <span class="register-error-message">Error message here!</span>
+                </p>
+                <p class="fieldset">
+                   <label class="register-image register-password" for="signin-password"></label>
+                   <input class="register-input" id="signin-password" type="text"  placeholder="Password">
+                   <a href="#0" class="hide-password">Hide</a>
+                   <span class="register-error-message">Error message here!</span>
+                </p>
+                <p class="fieldset">
+                   <input type="checkbox" id="remember-me" checked>
+                   <label class="label-remember-me"for="remember-me">Remember me</label>
+                </p>
+                <p class="fieldset">
+                   <button class="register-input" type="submit">Login</button>
+                </p>
+                <p class="register-forgot-message">
+                   <a href="#0">Forgot your password?</a>
+                </p>
+             </form>
+          </div>
+          <div id="signup-window">
+             <form class="register-form">
+                <p class="fieldset">
+                   <label class="register-image register-username" for="signup-username"></label>
+                   <input class="register-input " id="signup-username" type="text" placeholder="Username">
+                   <span class="register-error-message">Error message here!</span>
+                </p>
+                <p class="fieldset">
+                   <label class="register-image register-email" for="signup-email"></label>
+                   <input class="register-input " id="signup-email" type="email" placeholder="E-mail">
+                   <span class="register-error-message">Error message here!</span>
+                </p>
+                <p class="fieldset">
+                   <label class="register-image register-password" for="signup-password"></label>
+                   <input class="register-input " id="signup-password" type="text"  placeholder="Password">
+                   <a href="#0" class="hide-password">Hide</a>
+                   <span class="register-error-message">Error message here!</span>
+                </p>
+                <p class="fieldset">
+                   <input type="checkbox" id="accept-terms">
+                   <label class="label-agree"for="accept-terms">I agree to the <a class="register-terms" href="#">Terms</a></label>
+                </p>
+                <p class="fieldset">
+                   <button class="register-input" type="submit">Create new account</button>
+                </p>
+             </form>
+          </div>
+          <div id="register-reset-password">
+             <p class="register-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+             <form class="register-form">
+                <p class="fieldset">
+                   <label class="register-image register-email" for="reset-email"></label>
+                   <input class="register-input " id="reset-email" type="email" placeholder="E-mail">
+                   <span class="register-error-message">Error message here!</span>
+                </p>
+                <p class="fieldset">
+                   <button class="register-input" type="submit">Reset password</button>
+                </p>
+             </form>
+             <p class="register-forgot-message"><a href="#0">Back to log-in</a></p>
+          </div>
+          <a href="#" class="register-close">Close</a>
+       </div>
+    </div>
+    <div class="main">
+       <div class="top-rating">
+          <div class="rating-container">
+             <div class="rating-header-container">
                 <a class="rating-header-link" href="">
-                    <img src="styles/svg/top-rating.svg" href="#">
-                    <div class="rating-header" href="">Топ 10 игроков</div>
+                   <img src="styles/svg/top-rating.svg" href="#">
+                   <div class="rating-header" href="">Топ 10 игроков</div>
                 </a>
-            </div>
-            <div class="rating-list">
+             </div>
+             <div class="rating-list">
                 <a class="rating-member" href="">
-                    <div class="rating-number">1</div>
-                    <div class="rating-name">foxleren</div>
+                   <div class="rating-number">1</div>
+                   <div class="rating-name">foxleren</div>
                 </a>
-            </div>
-            <div class="rating-list">
+             </div>
+             <div class="rating-list">
                 <a class="rating-member" href="">
-                    <div class="rating-number">2</div>
-                    <div class="rating-name">foxleren</div>
+                   <div class="rating-number">2</div>
+                   <div class="rating-name">foxleren</div>
                 </a>
-            </div>
-            <div class="rating-list">
+             </div>
+             <div class="rating-list">
                 <a class="rating-member" href="">
-                    <div class="rating-number">3</div>
-                    <div class="rating-name">foxleren</div>
+                   <div class="rating-number">3</div>
+                   <div class="rating-name">foxleren</div>
                 </a>
-            </div>
-        </div>
+             </div>
+          </div>
+       </div>
+       <div class="playground">
+          <div class="playgound-buttons">
+          </div>
+          <div class="board">
+             <img src="styles/svg/chess-board.svg"> 
+          </div>
+       </div>
+       <div class="messages">
+       </div>
     </div>
-    <div class="playground">
-        <div class="playgound-buttons">
-
-        </div>
-        <div class="board">
-            <img src="styles/svg/chess-board.svg"> 
-        </div>
-        
-    </div>
-    <div class="messages">
-
-    </div>
-</div>
-
-<div class="gradient-barier"></div>
-<footer>
-    <div class="autograph">
-        <div class="made-by">made by</div>
-        <div class="authors">
-            <div class="f-p">foxleren & paw1a</div>
-            <div class="frontend">Frontend</div>
-            <div class="backend">Backend</div>
-        </div>
-    </div>
-</footer>
-
+    <div class="gradient-barier"></div>
+    <footer>
+       <div class="autograph">
+          <div class="made-by">made by</div>
+          <div class="authors">
+             <div class="f-p">foxleren & paw1a</div>
+             <div class="frontend">Frontend</div>
+             <div class="backend">Backend</div>
+          </div>
+       </div>
+    </footer>
 </body>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 
